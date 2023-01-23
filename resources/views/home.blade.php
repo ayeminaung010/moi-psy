@@ -4,7 +4,7 @@
 <div class="md:col-span-4 col-span-5  h-screen overflow-scroll overflow-x-hidden bg-gray-100 " id="container">
     <div class=" flex  flex-col mx-10">
         <div class=" py-6 ">
-            <div class=" text-xl">
+            <div class=" text-xl text-gray-500">
                 <h1>News</h1>
             </div>
         </div>
@@ -117,6 +117,7 @@
 @endsection
 
 @section('script')
+<script src="{{ asset('js/home.js') }}" type="module"></script>
 <script>
     $(document).ready(function() {
         $('#summernote').summernote({

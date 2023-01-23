@@ -1,12 +1,9 @@
+
  const overLay = document.querySelector('#overLay');
  const addBtn = document.querySelector('#addBtn');
  const closeBtn = document.querySelector('#closeBtn');
  const container = document.querySelector('#container');
 
- const uploadFile = document.querySelector('#uploadFile');
- const fileInput = document.querySelector('#fileInput');
- const fileValue = document.querySelector('#fileValue');
- const previewImg = document.querySelector('#previewImg');
 
  addBtn.addEventListener('click',function(){
     overLayShow();
@@ -17,16 +14,6 @@
     overLay.classList.add('hidden');
  })
 
- uploadFile.addEventListener('click',function(e){
-    e.preventDefault();
-    fileInput.click();
-    fileInput.addEventListener('input',function(){
-        var file = fileInput.files[0];
-        fileValue.innerHTML = file.name;
-
-        previewImg.src = URL.createObjectURL(file)
-    })
- })
 
  const editBtn = document.querySelector("#editBtn");
  editBtn.addEventListener('click',function(){
@@ -62,7 +49,6 @@
 const aTag = document.querySelectorAll('a');
 aTag.forEach((a) =>{
     a.addEventListener('click',function(){
-
         document.body.style.opacity = "0.8";
     })
     setTimeout(() => {

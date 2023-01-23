@@ -27,10 +27,27 @@
                 </div>
                 <div class="">
                     <ul class=" text-center text-gray-800 dark:text-white">
-                        <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">Dashboard</li>
-                        <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">Category</li>
-                        <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">Report</li>
-                        <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">Log Out</li>
+                        <a href="{{ route('home') }}">
+                            <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">
+                                Dashboard
+                            </li>
+                        </a>
+                        <a href="{{ route('category') }}">
+                            <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">
+                                Category
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">
+                                Report
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class=" py-4 hover:bg-purple-400 hover:text-white rounded-md font-semibold mx-10 my-2">
+                                Log Out
+                            </li>
+                        </a>
+
                     </ul>
                 </div>
             </div>
@@ -40,9 +57,9 @@
 
 
 </body>
-<script src="{{ asset('js/home.js') }}" type="module"></script>
-{{-- <script src="{{ asset('../resources/js/app.js') }}"></script> --}}
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+@vite('resources/js/bootstrap.js')
 
 @yield('script')
+
 </html>
