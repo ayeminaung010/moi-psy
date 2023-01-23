@@ -101,6 +101,16 @@
                                     <option value="" class="">Choose Category</option>
                                 </select>
                             </div>
+
+                        </div>
+                    </div>
+                    <div class=" my-4">
+                        <div class="flex flex-col gap-5 ">
+                            <label for="title" class=" text-xl">Location</label>
+                            {{-- <input type="text" class=" outline-none border-b-2 border-b-gray-600"> --}}
+                            <select name="" id="" class=" py-2 outline-none border-b-2 border-b-gray-500">
+                                <option value="" class="">Choose Location</option>
+                            </select>
                         </div>
                     </div>
                     <div class=" mt-10">

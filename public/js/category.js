@@ -10,7 +10,7 @@
  })
 
  closeBtn.addEventListener("click",function(){
-    container.classList.remove('opacity-50')
+    container.classList.remove('opacity-50');
     overLay.classList.add('hidden');
  })
 
