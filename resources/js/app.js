@@ -1,4 +1,4 @@
 // import './bootstrap';
-import swal from "sweetalert";
-window.Swal = swal;
+// import swal from "sweetalert";
+// window.Swal = swal;
 

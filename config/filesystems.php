@@ -56,6 +56,13 @@ return [
             'throw' => false,
         ],
 
+        'dropbox' => [
+            'driver' => 'dropbox',
+            'key' => env('p6ykt44tgqq977b'),
+            'secret' => env('g673e772l857199'),
+            'authorization_token' => env('sl.BXjInaX744qkKm-qiyyQKdmB28R9ogI6eWkE-KjtiuElZ9-n0AEK1_OmsckfPD4vrNVC7NRMlDIVRuprjtYXwOfkI36-qo-4yzEGeFFJdDfzQaur_oHHCGEELOF2Q4edioHkbGs'),
+        ],
+
     ],
 
     /*
